@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        function A() {
+            return A
+        }
+        function B() {
+            return A
+        }
+
+        let a = new A();
+        let b = new B();
+
+        alert( a == b );
+    </script>
+</body>
+</html>

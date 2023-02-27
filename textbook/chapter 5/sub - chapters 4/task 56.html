@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let styles = ["Джаз", "Блюз"];
+        styles.push("Рок-н-ролл");
+        styles[Math.floor((styles.length - 1) / 2)] = "Классика";
+        alert( styles.shift() );
+        styles.unshift("Рэп", "Регги");
+    </script>
+</body>
+</html>

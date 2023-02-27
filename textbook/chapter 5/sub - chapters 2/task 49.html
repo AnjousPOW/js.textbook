@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function readNumber(){
+            let number;
+
+            do {
+                number = prompt("Введите число", 0);
+            } while (!isFinite(number));
+
+            if (number === null || number === '') return null;
+
+            return +number;
+        }
+
+        alert(`Число: ${readNumber()}`);
+    </script>
+</body>
+</html>

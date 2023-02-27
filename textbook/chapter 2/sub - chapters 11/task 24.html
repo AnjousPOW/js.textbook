@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        let userName = prompt("Кто там еще?", '');
+
+        if (userName === 'Админ') {
+
+        let pass = prompt('Пароль', '');
+
+            if (pass === 'Админ123') {
+                alert( 'Здравствуйте!' );
+            } else if (pass === '' || pass === null) {
+                alert( 'Отменено' );
+            } else {
+                alert( 'Неверный пароль' );
+            }
+
+        } else if (userName === '' || userName === null) {
+        alert( 'Отменено' );
+        } else {
+        alert( "Я вас не знаю" );
+        }
+    </script>
+</body>
+</html>

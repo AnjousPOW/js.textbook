@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function camelize(str) {
+            str = str.split('-')
+            str = str.map((word, index) => index == 0 ? word : word[0].toUpperCase() + word.slice(1))
+            str = str.join('');
+            return str
+        }
+        str1 = camelize("background-color");
+        console.log(str1)
+        str2 = camelize("list-style-image");
+        console.log(str2)
+        str3 = camelize("-webkit-transition");
+        console.log(str3)
+    </script>
+</body>
+</html>
